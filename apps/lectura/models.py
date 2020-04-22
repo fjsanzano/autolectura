@@ -1,6 +1,9 @@
 from django.db import models
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
+from django.utils import timezone
+from datetime import date
+
 
 # Create your models here.
 # class Article(models.Model):
@@ -32,10 +35,11 @@ class MeterReading(models.Model):
                                        max_length=64,  default='000000', unique=True)
     commercial_office_id = models.ForeignKey(CommercialOffice, on_delete=models.CASCADE,
                                              verbose_name=_('Commercial Office'),)
-    route = models.IntegerField(verbose_name=_("Collection route"), null=True,)
+    route = models.CharField(verbose_name=_("Collection route"), max_length=6, null=True)
     number = models.IntegerField(verbose_name=_("Folio"), null=True,)
-
-    reading = models.CharField(verbose_name=_('Name'), help_text=_('Commercial Office name'), max_length=6,  default='00000', )
+    reading = models.CharField(verbose_name=_('Reading'), help_text=_('Meter selfreading'),
+                               max_length=6,  default='00000', )
+    reading_date = models.DateField(verbose_name=_('Reading date'), default=date.today,)
 
     def __str__(self):
         return self.contract_number + '/' + self.reading
