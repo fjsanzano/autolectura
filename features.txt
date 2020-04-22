@@ -1,0 +1,32 @@
+Usuario o cliente
+    + Nombre
+    + correo electronico
+    + Nro contrato
+        
+Oficina comercial
+    + Nombre
+    + E-Mail
+    + Municipio
+    + Telefonos
+
+Lectura
+    +Usuario
+    +Nro contrato
+    +Oficina comercial:
+    +Ruta: INT
+    +Folio: INT
+    +Lectura: CHAR(5) puede tener 0 delante
+    
+Gestionar usuarios
+    +
+
+Gestionar lecturas
+    + Lislar lecturas
+    + Reportar lectura
+    + Cancelar lectura
+    V- la lectura debe ser mayor que la anterior
+    V- para cancelar la lectura debe estar en estado "reportada"
+    V- solo se listan las lecturas de ese usuario
+    
+Reportar lecturas(imprimir listado de lecturas hasta la fecha y cambiar estado a reportadas)
+    
