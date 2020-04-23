@@ -3,6 +3,7 @@ from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 from django.utils import timezone
 from datetime import date
+from django.urls import reverse
 
 
 # Create your models here.
@@ -31,7 +32,7 @@ class MeterReading(models.Model):
         verbose_name = _('Meter Reading')
 
     user_id = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True, on_delete=models.SET_NULL)
-    contract_number = models.CharField(verbose_name=_('Contract number'), help_text=_('Commercial Office name'),
+    contract_number = models.CharField(verbose_name=_('Contract number'), help_text=_('Contract number'),
                                        max_length=64,  default='000000', unique=True)
     commercial_office_id = models.ForeignKey(CommercialOffice, on_delete=models.CASCADE,
                                              verbose_name=_('Commercial Office'),)
@@ -43,3 +44,6 @@ class MeterReading(models.Model):
 
     def __str__(self):
         return self.contract_number + '/' + self.reading
+
+    def get_absolute_url(self):
+        return reverse('read-list',)

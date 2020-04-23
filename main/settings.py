@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'django.hlg.desoft.cu', ]
 
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 
