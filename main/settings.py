@@ -25,7 +25,7 @@ SECRET_KEY = 'eq#j)^9il4z6p=_yb9y7$-a-n-#pff)x!la+r(ue!1g#)g4x9_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'www.pyerp.co', 'pyerp.co', 'test.pyerp.co']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'django.hlg.desoft.cu', ]
 
 
 # Application definition
