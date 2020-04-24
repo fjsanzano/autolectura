@@ -1,0 +1,68 @@
+[
+  {
+    "model": "lectura.CommercialOffice",
+    "pk": 1,
+    "fields": {
+      "name": "Nuevo Holguin(Pedro Dias Coello)",
+      "email": "oc.nholguin@elechol.une.cu",
+      "telephone": "24423702 ext 50881"
+    }
+  },
+  {
+    "model": "lectura.CommercialOffice",
+    "pk": 2,
+    "fields": {
+      "name": "Maximo Gomez",
+      "email": "oc.mgomez@elechol.une.cu",
+      "telephone": "24423702 ext 50881"
+    }
+  },
+  {
+    "model": "lectura.CommercialOffice",
+    "pk": 3,
+    "fields": {
+      "name": "Lenin",
+      "email": "oc.lenin@elechol.une.cu",
+      "telephone": "24423702 ext 50881"
+    }
+  },
+  {
+    "model": "lectura.CommercialOffice",
+    "pk": 4,
+    "fields": {
+      "name": "Alcides Pino",
+      "email": "oc.apino@elechol.une.cu",
+      "telephone": "24423702 ext 50881"
+    }
+  },
+  {
+    "model": "lectura.CommercialOffice",
+    "pk":5,
+    "fields": {
+      "name": "Pueblo Nuevo",
+      "email": "oc.pnuevo@elechol.une.cu",
+      "telephone": "24423702 ext 50881"
+    }
+  },
+  {
+    "model": "lectura.CommercialOffice",
+    "pk": 6,
+    "fields": {
+      "name": "Alex Urquiola",
+      "email": "oc.aurquiola@elechol.une.cu",
+      "telephone": "24423702 ext 50881"
+    }
+  },
+  {
+    "model": "lectura.CommercialOffice",
+    "pk": 7,
+    "fields": {
+      "name": "San Andres",
+      "email": "oc.sandres@elechol.une.cu",
+      "telephone": "24423702 ext 50881"
+    }
+  }
+
+
+
+]
