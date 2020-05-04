@@ -19,7 +19,7 @@ class CommercialOffice(models.Model):
         verbose_name = _('Commercial Office')
 
     name = models.CharField(verbose_name=_('Name'), help_text=_('Commercial Office name'), max_length=64,  default='000000', unique=True)
-    email = models.CharField(verbose_name=_('E-Mail'), help_text=_('Commercial Office E-mail'), max_length=64)
+    email = models.EmailField(verbose_name=_('E-Mail'), help_text=_('Commercial Office E-mail'), max_length=64)
     telephone = models.CharField(verbose_name=_('Telephone'), help_text=_('Commercial Office Telephone'), max_length=64)
 
     def __str__(self):

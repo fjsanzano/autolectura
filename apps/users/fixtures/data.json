@@ -1,0 +1,12 @@
+[
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "comercial2",
+      "permissions": [
+        29,30,31,32
+      ]
+    }
+  }
+]
