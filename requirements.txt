@@ -3,4 +3,5 @@ asgiref
 pytz
 sqlparse
 Django
+django-admin-menu
 djangorestframework

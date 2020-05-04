@@ -32,6 +32,7 @@ LOGIN_REDIRECT_URL = '/'
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_menu',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,4 +125,5 @@ STATIC_URL = '/static/'
 
 # incluir en los static files los css y js de base
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static/'),)
+
 
