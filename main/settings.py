@@ -126,4 +126,20 @@ STATIC_URL = '/static/'
 # incluir en los static files los css y js de base
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static/'),)
 
+###############
+# EMAIL SETUP #
+###############
 
+EMAIL_HOST = 'webmail.cu'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'mi.usuario'
+EMAIL_HOST_PASSWORD = 'mi.password'
+EMAIL_USE_SSL = True
+
+########################
+# OTHER EMAIL SETTINGS #
+########################
+ADMIN_EMAIL = EMAIL_HOST_USER
+SUPPORT_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
